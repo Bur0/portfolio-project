@@ -1,14 +1,5 @@
-import Hero from '@//components/shared/Hero'
-import Navbar from '@//components/shared/Navbar'
-
 const Home = () => (
-  <div className="portfolio-app">
-    {/* NAVBAR START */}
-    <Navbar />
-    {/* NAVBAR ENDS */}
-    {/* HERO STARTS */}
-    <Hero />
-    {/* HERO ENDS */}
+  <>
     <div className="container">
       {/* HOME PAGE STARTS */}
       <section className="section-title">
@@ -210,7 +201,7 @@ const Home = () => (
       </div>
     </footer>
     {/* FOOTER ENDS */}
-  </div>
+  </>
 )
 
 export default Home

@@ -1,16 +1,18 @@
 import App from 'next/app'
-import Navbar from '@/components/shared/Navbar'
-import Hero from '@//components/shared/Hero'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '@/styles/index.scss'
+import '../styles/index.scss'
 
-function MyApp({ Component, pageProps }) {
+import Navbar from '../components/shared/Navbar'
+import Hero from '../components/shared/Hero'
+
+const MyApp = ({ Component, pageProps }) => {
   const isHomePage = () => Component.name === 'Home'
+
   return (
     <div className="portfolio-app">
       <Navbar />
-      {isHomePage && <Hero />}
+      {isHomePage() && <Hero />}
       <div className="container">
         <Component {...pageProps} />
       </div>

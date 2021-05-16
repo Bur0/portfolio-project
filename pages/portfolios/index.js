@@ -2,7 +2,7 @@ import React from 'react'
 
 const apiCall = () => {
   return new Promise((res, rej) => {
-    setTimeout(() => {
+     setTimeout(() => {
       res({ testingData: 'Just some testing Data' })
     }, 5000)
   })
